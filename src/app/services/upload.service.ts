@@ -6,7 +6,7 @@ import { map } from  'rxjs/operators';
   providedIn: 'root'
 })
 export class UploadService {
-  SERVER_URL: string = "https://quizpi.herokuapp.com/api/";
+  SERVER_URL: string = "http://localhost:3002/api/";
   constructor(private httpClient: HttpClient) { }
   public upload(data, userId) {
     let uploadURL = `${this.SERVER_URL}/upload`;
